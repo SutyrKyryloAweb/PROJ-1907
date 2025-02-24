@@ -1,0 +1,898 @@
+[
+    {
+        "category": "Football",
+        "questions": [
+            {
+                "question": "Which country is home to FC Barcelona?",
+                "questionInfo": "FC Barcelona is one of the most famous football clubs in the world, based in the region of Catalonia.",
+                "answers": ["Spain", "France", "Italy", "Germany"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "How many players are on a football team?",
+                "questionInfo": "A standard football match is played with eleven players on each team, including the goalkeeper.",
+                "answers": ["11", "10", "12", "9"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the maximum duration of a football match?",
+                "questionInfo": "A regular football match consists of two halves of 45 minutes each, making a total of 90 minutes.",
+                "answers": ["90 minutes", "120 minutes", "80 minutes", "70 minutes"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which country has won the most FIFA World Cups?",
+                "questionInfo": "Brazil is known for its strong football culture and has won the FIFA World Cup five times.",
+                "answers": ["Brazil", "Germany", "Italy", "Argentina"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is an offside in football?",
+                "questionInfo": "In football, a player is offside if they receive the ball behind the last defender when the ball is played.",
+                "answers": ["Being ahead of the last defender", "Kicking the ball out", "Scoring from far", "Blocking a shot"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Who is the all-time top scorer in FIFA World Cup history?",
+                "questionInfo": "The record is held by Miroslav Klose, a German footballer who scored 16 goals in World Cup tournaments.",
+                "answers": ["Miroslav Klose", "Pele", "Ronaldo", "Lionel Messi"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which player has won the most Ballon d'Or awards?",
+                "questionInfo": "Lionel Messi holds the record for the most Ballon d'Or titles, awarded to the best player in the world.",
+                "answers": ["Lionel Messi", "Cristiano Ronaldo", "Pele", "Maradona"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which club has won the most UEFA Champions League titles?",
+                "questionInfo": "Real Madrid has won the most UEFA Champions League titles, with more than 10 victories.",
+                "answers": ["Real Madrid", "Barcelona", "Manchester United", "Bayern Munich"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which position in football is responsible for stopping goals?",
+                "questionInfo": "The goalkeeper is the only player allowed to use their hands and is responsible for preventing goals.",
+                "answers": ["Goalkeeper", "Defender", "Midfielder", "Forward"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a hat-trick in football?",
+                "questionInfo": "A player scores a hat-trick when they score three goals in a single match.",
+                "answers": ["Three goals in one match", "A goal from midfield", "A goal with both feet", "A penalty and free kick goal"],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "Basketball",
+        "questions": [
+            {
+                "question": "How many players are on a basketball team?",
+                "questionInfo": "Each basketball team has five players on the court at a time, playing different roles such as guard and center.",
+                "answers": [
+                    "5",
+                    "6",
+                    "7",
+                    "8"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a three-pointer in basketball?",
+                "questionInfo": "A three-pointer is a field goal shot made from beyond the three-point line, earning three points instead of two.",
+                "answers": [
+                    "A shot from beyond the three-point line",
+                    "A dunk",
+                    "A layup",
+                    "A free throw"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Who has won the most NBA championships as a player?",
+                "questionInfo": "Bill Russell holds the record for the most NBA championships won by a player, with 11 titles.",
+                "answers": [
+                    "Bill Russell",
+                    "Michael Jordan",
+                    "LeBron James",
+                    "Kobe Bryant"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the duration of an NBA game?",
+                "questionInfo": "An NBA game consists of four quarters, each lasting 12 minutes, totaling 48 minutes of play.",
+                "answers": [
+                    "48 minutes",
+                    "40 minutes",
+                    "60 minutes",
+                    "50 minutes"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which player is known as 'His Airness'?",
+                "questionInfo": "Michael Jordan, widely considered one of the greatest basketball players, earned the nickname 'His Airness' due to his dunking ability.",
+                "answers": [
+                    "Michael Jordan",
+                    "Kobe Bryant",
+                    "LeBron James",
+                    "Shaquille O'Neal"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is an alley-oop in basketball?",
+                "questionInfo": "An alley-oop occurs when one player throws the ball near the basket for a teammate to catch and score in mid-air.",
+                "answers": [
+                    "A pass leading to an aerial dunk",
+                    "A long-range three-pointer",
+                    "A block shot",
+                    "A fast-break layup"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the maximum number of personal fouls before a player is disqualified in the NBA?",
+                "questionInfo": "In the NBA, a player fouls out after committing six personal fouls.",
+                "answers": [
+                    "6",
+                    "5",
+                    "7",
+                    "4"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which NBA team has won the most championships?",
+                "questionInfo": "The Boston Celtics and Los Angeles Lakers hold the record for the most NBA championships won.",
+                "answers": [
+                    "Boston Celtics",
+                    "Los Angeles Lakers",
+                    "Chicago Bulls",
+                    "Golden State Warriors"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the shot clock duration in the NBA?",
+                "questionInfo": "The NBA shot clock gives teams 24 seconds to attempt a field goal.",
+                "answers": [
+                    "24 seconds",
+                    "30 seconds",
+                    "35 seconds",
+                    "20 seconds"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which player scored 100 points in a single NBA game?",
+                "questionInfo": "Wilt Chamberlain set the record by scoring 100 points in a single NBA game in 1962.",
+                "answers": [
+                    "Wilt Chamberlain",
+                    "Michael Jordan",
+                    "Kobe Bryant",
+                    "Shaquille O'Neal"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "Hockey",
+        "questions": [
+            {
+                "question": "How many players are on the ice for each team in a standard hockey game?",
+                "questionInfo": "A standard hockey team has six players on the ice at a time, including the goalie.",
+                "answers": ["6", "5", "7", "8"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the trophy awarded to the NHL champion?",
+                "questionInfo": "The Stanley Cup is the most prestigious trophy in professional hockey, awarded annually to the NHL champion.",
+                "answers": ["Stanley Cup", "Calder Cup", "Hart Trophy", "Vezina Trophy"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which country has won the most Olympic gold medals in men's hockey?",
+                "questionInfo": "Canada has won the most Olympic gold medals in men's hockey, thanks to its strong hockey culture.",
+                "answers": ["Canada", "Russia", "Sweden", "USA"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for scoring three goals in a single hockey game?",
+                "questionInfo": "A hat-trick occurs when a player scores three goals in a single hockey game.",
+                "answers": ["Hat-trick", "Power play", "Breakaway", "Slap shot"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the penalty called when a player uses their stick to pull an opponent's feet from under them?",
+                "questionInfo": "Tripping is a penalty in hockey where a player uses their stick or body to take down an opponent.",
+                "answers": ["Tripping", "Slashing", "Hooking", "Interference"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which NHL player holds the record for the most career goals?",
+                "questionInfo": "Wayne Gretzky, also known as 'The Great One,' holds the record for the most career goals in NHL history.",
+                "answers": ["Wayne Gretzky", "Alexander Ovechkin", "Mario Lemieux", "Gordie Howe"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for when a team has more players on the ice due to a penalty against the opposing team?",
+                "questionInfo": "A power play occurs when a team has more players on the ice because the other team has been given a penalty.",
+                "answers": ["Power play", "Breakaway", "Icing", "Penalty shot"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the line in the middle of the hockey rink?",
+                "questionInfo": "The red line at the center of the rink divides the playing surface into two halves.",
+                "answers": ["Center line", "Blue line", "Goal line", "Penalty line"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which piece of equipment do goalies wear that is much larger than other players' equipment?",
+                "questionInfo": "Goalies wear oversized leg pads to help them block shots more effectively.",
+                "answers": ["Leg pads", "Gloves", "Helmet", "Shoulder pads"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for when a player shoots the puck across both the center red line and the opposing team's goal line without it being touched?",
+                "questionInfo": "Icing is called when a player shoots the puck from their side of the ice past the opponent's goal line without it being touched.",
+                "answers": ["Icing", "Offside", "Faceoff", "Slap shot"],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "Tennis",
+        "questions": [
+            {
+                "question": "How many Grand Slam tournaments are there in tennis?",
+                "questionInfo": "There are four major Grand Slam tournaments in tennis: the Australian Open, the French Open, Wimbledon, and the US Open.",
+                "answers": ["4", "5", "3", "6"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which surface is used at Wimbledon?",
+                "questionInfo": "Wimbledon is known for its grass courts, which are considered the most traditional surface in tennis.",
+                "answers": ["Grass", "Clay", "Hard", "Carpet"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'love' score in tennis?",
+                "questionInfo": "In tennis, 'love' means a score of zero, i.e., when a player has not yet scored any points in a game.",
+                "answers": ["Zero", "One", "Two", "Five"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which male tennis player has the most Grand Slam titles?",
+                "questionInfo": "Roger Federer, Rafael Nadal, and Novak Djokovic all have 20 Grand Slam titles, sharing the record for most titles in men's tennis.",
+                "answers": ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Pete Sampras"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "How many games are played in a set of tennis?",
+                "questionInfo": "In tennis, a player must win six games to win a set, though they must also be at least two games ahead of their opponent.",
+                "answers": ["6", "5", "7", "8"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a tiebreak in tennis?",
+                "questionInfo": "A tiebreak is played when the set score reaches 6-6, and the first player to reach 7 points wins the set.",
+                "answers": ["A deciding game to break a tie", "A penalty for a late arrival", "A break between sets", "A score reset"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which tennis player has won the most singles titles in the Open Era?",
+                "questionInfo": "Jimmy Connors holds the record for the most singles titles in the Open Era with 109 titles.",
+                "answers": ["Jimmy Connors", "Roger Federer", "Rafael Nadal", "Novak Djokovic"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for a serve that the opponent cannot touch?",
+                "questionInfo": "A 'ace' is a serve that the opponent fails to touch or return.",
+                "answers": ["Ace", "Fault", "Double Fault", "Net"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which tennis tournament is played on clay courts?",
+                "questionInfo": "The French Open is the only Grand Slam tournament that is played on clay courts.",
+                "answers": ["French Open", "Wimbledon", "US Open", "Australian Open"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "How many sets does a player need to win in a standard tennis match?",
+                "questionInfo": "In men's tennis, a standard match is played in a best-of-five-set format, while women play a best-of-three-set format.",
+                "answers": ["3", "2", "5", "7"],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "Bowling",
+        "questions": [
+            {
+                "question": "How many pins are there in a standard game of bowling?",
+                "questionInfo": "A standard game of bowling uses 10 pins, and the goal is to knock them all down with as few rolls as possible.",
+                "answers": ["10", "8", "12", "6"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a perfect score in bowling?",
+                "questionInfo": "A perfect score in bowling is 300, which means a player has bowled 12 strikes in a row.",
+                "answers": ["300", "200", "150", "400"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'strike' in bowling?",
+                "questionInfo": "A strike is when all 10 pins are knocked down on the first roll of a frame.",
+                "answers": ["Knocking down all pins on the first roll", "Knocking down half the pins", "Knocking down 7 pins", "A split"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the area where a bowler stands to throw the ball?",
+                "questionInfo": "The approach area is where the bowler starts their throw, and it includes the area leading up to the foul line.",
+                "answers": ["Approach", "Lane", "Alley", "Box"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "How many frames are in a standard bowling game?",
+                "questionInfo": "A standard game of bowling consists of 10 frames, and in each frame, a player has two opportunities to knock down the pins.",
+                "answers": ["10", "9", "11", "12"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'spare' in bowling?",
+                "questionInfo": "A spare is when a player knocks down all 10 pins in a frame, but it takes two rolls to do so.",
+                "answers": ["Knocking down all pins in two rolls", "Knocking down 9 pins", "Knocking down a strike", "A perfect game"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the maximum number of strikes a player can get in a game of bowling?",
+                "questionInfo": "The maximum number of strikes in a game is 12, which happens in a perfect game.",
+                "answers": ["12", "10", "8", "15"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the 'foul line' in bowling?",
+                "questionInfo": "The foul line is the line a bowler cannot cross when delivering the ball. Crossing it results in a foul.",
+                "answers": ["The line that a player cannot cross", "The line indicating the start of the lane", "The line for scoring", "The line marking the end of the game"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for when a player leaves two non-adjacent pins standing after their first roll?",
+                "questionInfo": "A 'split' occurs when a player leaves two or more non-adjacent pins after their first roll.",
+                "answers": ["Split", "Strike", "Spare", "Turkey"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for three strikes in a row in bowling?",
+                "questionInfo": "A turkey is the term for when a player bowls three strikes in a row.",
+                "answers": ["Turkey", "Triple", "Perfect game", "Double"],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "Golf",
+        "questions": [
+            {
+                "question": "How many holes are there in a standard golf course?",
+                "questionInfo": "A standard golf course has 18 holes, although there are courses with 9 holes.",
+                "answers": ["18", "9", "12", "15"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a hole-in-one in golf?",
+                "questionInfo": "A hole-in-one is when a player hits the ball directly from the tee into the hole on their first shot.",
+                "answers": ["Hole-in-one", "Eagle", "Birdie", "Par"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for one stroke under par on a hole?",
+                "questionInfo": "A birdie is one stroke under par, meaning the player completed the hole with one less shot than the standard par.",
+                "answers": ["Birdie", "Eagle", "Double-bogey", "Bogey"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the standard par for a golf course?",
+                "questionInfo": "Par is the standard number of strokes it should take to complete a hole or course. A standard course has a par of 72.",
+                "answers": ["72", "70", "68", "75"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'bogey' in golf?",
+                "questionInfo": "A bogey is when a player completes a hole with one stroke over par.",
+                "answers": ["Bogey", "Birdie", "Eagle", "Hole-in-one"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for the area of the golf course where the hole is located?",
+                "questionInfo": "The green is the area of the golf course where the hole is located, and it is usually the smoothest area of grass.",
+                "answers": ["Green", "Tee", "Fairway", "Bunker"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the club used for long shots from the tee?",
+                "questionInfo": "A driver is the club used for long-distance shots from the tee, typically the first shot on a hole.",
+                "answers": ["Driver", "Putter", "Iron", "Wedge"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is an eagle in golf?",
+                "questionInfo": "An eagle is when a player completes a hole two strokes under par.",
+                "answers": ["Eagle", "Birdie", "Par", "Bogey"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'double-bogey' in golf?",
+                "questionInfo": "A double-bogey is when a player completes a hole with two strokes over par.",
+                "answers": ["Double-bogey", "Bogey", "Eagle", "Birdie"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the purpose of the sand trap or bunker in golf?",
+                "questionInfo": "The sand trap or bunker is designed to make the hole more challenging by requiring more skill to get out of the sand.",
+                "answers": ["To challenge the player", "To make the hole shorter", "To improve accuracy", "To mark the fairway"],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "Boxing",
+        "questions": [
+            {
+                "question": "What is the standard weight of a professional boxing glove?",
+                "questionInfo": "Professional boxing gloves typically weigh 10 ounces, though there are variations depending on the weight class of the fighters.",
+                "answers": ["10 ounces", "12 ounces", "8 ounces", "16 ounces"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Who holds the record for the most heavyweight title defenses in boxing?",
+                "questionInfo": "Joe Louis holds the record for the most consecutive heavyweight title defenses with 25.",
+                "answers": ["Joe Louis", "Muhammad Ali", "Mike Tyson", "Evander Holyfield"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'knockout' in boxing?",
+                "questionInfo": "A knockout (KO) happens when a fighter is knocked down and unable to continue after a certain count from the referee.",
+                "answers": ["Knocked out", "Knocked down", "Disqualified", "TKO"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which boxing legend is known as 'The Greatest'?",
+                "questionInfo": "Muhammad Ali is often referred to as 'The Greatest' due to his skill, charisma, and legendary matches.",
+                "answers": ["Muhammad Ali", "Mike Tyson", "Sugar Ray Leonard", "Floyd Mayweather"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for when a boxer wins by decision at the end of a fight?",
+                "questionInfo": "A decision is the result of a fight where the judges score the bout after all rounds have been completed, and the fighter with the highest score wins.",
+                "answers": ["Decision", "Knockout", "Draw", "Submission"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "How many rounds does a standard professional boxing match last?",
+                "questionInfo": "A standard professional boxing match consists of 12 rounds, with each round lasting three minutes.",
+                "answers": ["12", "10", "15", "8"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'technical knockout' (TKO) in boxing?",
+                "questionInfo": "A technical knockout (TKO) happens when the referee stops the fight due to a boxer being unable to defend themselves properly.",
+                "answers": ["TKO", "KO", "Submission", "Decision"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Who was the first boxer to win world titles in five different weight classes?",
+                "questionInfo": "Sugar Ray Leonard was the first boxer to win world titles in five different weight classes.",
+                "answers": ["Sugar Ray Leonard", "Floyd Mayweather", "Oscar De La Hoya", "Manny Pacquiao"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the famous boxing ring event held in Las Vegas annually?",
+                "questionInfo": "The annual 'Fight of the Century' event is held in Las Vegas, featuring the biggest matches in boxing.",
+                "answers": ["Fight of the Century", "The Rumble in the Jungle", "The Thriller in Manila", "The Big Fight"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which boxer famously said, 'Float like a butterfly, sting like a bee'?",
+                "questionInfo": "Muhammad Ali was known for saying, 'Float like a butterfly, sting like a bee,' describing his boxing style.",
+                "answers": ["Muhammad Ali", "Mike Tyson", "Sugar Ray Robinson", "George Foreman"],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "Badminton",
+        "questions": [
+            {
+                "question": "What is the standard weight of a badminton shuttlecock?",
+                "questionInfo": "A standard badminton shuttlecock weighs between 4.74 and 5.50 grams.",
+                "answers": ["4.74 to 5.50 grams", "3.00 to 4.00 grams", "6.00 to 7.00 grams", "5.00 to 6.00 grams"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "In which year did badminton become a full Olympic sport?",
+                "questionInfo": "Badminton became a full Olympic sport in 1992 at the Barcelona Summer Games.",
+                "answers": ["1992", "1988", "1996", "2000"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "How many points are required to win a game in badminton?",
+                "questionInfo": "A standard game in badminton is played to 21 points, and a player must win by at least 2 points.",
+                "answers": ["21", "15", "25", "18"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for a hit in badminton that goes over the net without being touched?",
+                "questionInfo": "A smash is a powerful shot in badminton, hit from above the head to send the shuttlecock down steeply into the opponent's court.",
+                "answers": ["Smash", "Clear", "Drop", "Drive"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the sport where two teams of two players each try to hit a shuttlecock back and forth over a net?",
+                "questionInfo": "The sport played by two teams of two players is called 'doubles badminton'.",
+                "answers": ["Doubles badminton", "Mixed doubles", "Singles badminton", "Team badminton"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'clear' in badminton?",
+                "questionInfo": "A clear is a high shot aimed to send the shuttlecock to the back of the opponent's court.",
+                "answers": ["Clear", "Smash", "Drive", "Drop"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Who is considered one of the greatest badminton players of all time?",
+                "questionInfo": "Lin Dan, a Chinese badminton player, is considered one of the greatest in the history of the sport.",
+                "answers": ["Lin Dan", "Lee Chong Wei", "Taufik Hidayat", "P.V. Sindhu"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the primary objective in badminton?",
+                "questionInfo": "The primary objective in badminton is to hit the shuttlecock over the net and into the opponent's court to score points.",
+                "answers": ["Hit the shuttlecock into the opponent's court", "Block the shuttlecock", "Serve the shuttlecock", "Chase the shuttlecock"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the 'net' in badminton?",
+                "questionInfo": "The net in badminton divides the court into two halves and the shuttlecock must pass over the net to score.",
+                "answers": ["Net", "Line", "Court", "Pole"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "In badminton, how many players can participate in a 'mixed doubles' match?",
+                "questionInfo": "A mixed doubles match involves two male players and two female players, with each pair representing one team.",
+                "answers": ["4", "2", "6", "3"],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "Table Tennis",
+        "questions": [
+            {
+                "question": "How many points are required to win a game in table tennis?",
+                "questionInfo": "A player must score 11 points to win a game in table tennis, with a two-point advantage required to win.",
+                "answers": ["11", "15", "21", "10"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Who holds the most Olympic gold medals in table tennis?",
+                "questionInfo": "Chinese player Deng Yaping has won the most Olympic gold medals in table tennis, with four golds.",
+                "answers": ["Deng Yaping", "Ma Long", "Zhang Jike", "Liu Guoliang"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the table tennis ball?",
+                "questionInfo": "The ball used in table tennis is small, lightweight, and made of celluloid or plastic, commonly referred to as a ping pong ball.",
+                "answers": ["Ping Pong Ball", "Tennis Ball", "Volleyball", "Football"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for hitting the ball after one bounce on each side of the table?",
+                "questionInfo": "In table tennis, a rally is the term used when the ball is returned after one bounce on each side of the table.",
+                "answers": ["Rally", "Serve", "Volley", "Set"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "How high is the net in table tennis?",
+                "questionInfo": "The net in table tennis stands 15.25 cm (6 inches) high.",
+                "answers": ["15.25 cm", "10 cm", "20 cm", "18 cm"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'smash' in table tennis?",
+                "questionInfo": "A smash is a powerful shot hit downward over the table in table tennis, often following a high ball.",
+                "answers": ["Smash", "Serve", "Spin", "Block"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What type of spin is typically applied to the ball in table tennis?",
+                "questionInfo": "Table tennis players often apply topspin, backspin, or sidespin to the ball to influence its trajectory and bounce.",
+                "answers": ["Topspin", "Backspin", "Sidespin", "All of the above"],
+                "correctAnswerIndex": 3
+            },
+            {
+                "question": "Which country is known as the dominant force in table tennis?",
+                "questionInfo": "China is widely regarded as the dominant force in table tennis, having produced numerous world-class players.",
+                "answers": ["China", "Germany", "Japan", "South Korea"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the maximum number of games in a standard table tennis match?",
+                "questionInfo": "A standard table tennis match can be played in a best-of-seven format, which means up to seven games.",
+                "answers": ["7", "5", "9", "11"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which event is the most prestigious in table tennis?",
+                "questionInfo": "The World Table Tennis Championships is considered the most prestigious event in table tennis, held every two years.",
+                "answers": ["World Table Tennis Championships", "Olympic Games", "Asian Games", "European Championships"],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "Volleyball",
+        "questions": [
+            {
+                "question": "How many players are there on a volleyball team?",
+                "questionInfo": "A standard volleyball team consists of 6 players on the court at any one time.",
+                "answers": ["6", "4", "8", "5"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the maximum number of hits allowed per team before the ball must go over the net?",
+                "questionInfo": "In volleyball, a team is allowed a maximum of three hits to return the ball over the net.",
+                "answers": ["3", "2", "4", "5"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'spike' in volleyball?",
+                "questionInfo": "A spike is an aggressive hit where the ball is slammed into the opponent’s court with force.",
+                "answers": ["Spike", "Block", "Serve", "Dink"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the position responsible for setting up offensive plays in volleyball?",
+                "questionInfo": "The setter is the player responsible for setting up offensive plays, often by making a high pass to a teammate for a spike.",
+                "answers": ["Setter", "Libero", "Outside hitter", "Defensive specialist"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "In what year did volleyball become an official Olympic sport?",
+                "questionInfo": "Volleyball became an official Olympic sport in 1964 at the Tokyo Olympics.",
+                "answers": ["1964", "1956", "1972", "1980"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the defensive position that focuses on receiving serves and playing in the back row?",
+                "questionInfo": "The libero is the specialized defensive player who focuses on receiving serves and plays in the back row.",
+                "answers": ["Libero", "Outside hitter", "Setter", "Middle blocker"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'block' in volleyball?",
+                "questionInfo": "A block is when one or more players jump near the net to intercept or deflect a spike from the opposing team.",
+                "answers": ["Block", "Dink", "Ace", "Spike"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the international governing body for volleyball?",
+                "questionInfo": "The Fédération Internationale de Volleyball (FIVB) is the international governing body for the sport of volleyball.",
+                "answers": ["FIVB", "IOC", "UEFA", "NBA"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "How many points are required to win a set in volleyball?",
+                "questionInfo": "A team needs to score 25 points to win a set in volleyball, with a two-point lead required.",
+                "answers": ["25", "21", "30", "15"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the maximum number of substitutions allowed per set in professional volleyball?",
+                "questionInfo": "In professional volleyball, a team is allowed up to 6 substitutions per set.",
+                "answers": ["6", "3", "10", "8"],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "Rugby",
+        "questions": [
+            {
+                "question": "How many points is a try worth in rugby?",
+                "questionInfo": "A try is worth 5 points in rugby and is scored by grounding the ball over the opponent's goal line.",
+                "answers": ["5", "3", "7", "10"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the event that determines the world champion in rugby?",
+                "questionInfo": "The Rugby World Cup is the premier international competition to crown the world champion of rugby.",
+                "answers": ["Rugby World Cup", "Six Nations Championship", "The Rugby Championship", "Rugby League World Cup"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the maximum number of players on a rugby union team?",
+                "questionInfo": "A rugby union team consists of 15 players, with 8 forwards and 7 backs.",
+                "answers": ["15", "13", "12", "14"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'scrum' in rugby?",
+                "questionInfo": "A scrum is a method of restarting play where the forwards of both teams bind together and try to push the opposition off the ball.",
+                "answers": ["Scrum", "Line-out", "Free kick", "Penalty"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "In rugby, what is a 'conversion'?",
+                "questionInfo": "A conversion is a kick at goal following a try, worth 2 points, and is taken from in-line with where the try was scored.",
+                "answers": ["Conversion", "Drop goal", "Penalty", "Kickoff"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "How long is a rugby union match?",
+                "questionInfo": "A rugby union match lasts 80 minutes, divided into two halves of 40 minutes each.",
+                "answers": ["80 minutes", "90 minutes", "70 minutes", "60 minutes"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the international competition between England, France, Ireland, Italy, Scotland, and Wales?",
+                "questionInfo": "The Six Nations Championship is an annual rugby competition between six teams: England, France, Ireland, Italy, Scotland, and Wales.",
+                "answers": ["Six Nations Championship", "Rugby World Cup", "The Rugby Championship", "Tri Nations"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which country won the first Rugby World Cup in 1987?",
+                "questionInfo": "New Zealand won the first Rugby World Cup in 1987, defeating France in the final.",
+                "answers": ["New Zealand", "Australia", "South Africa", "England"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the maximum number of substitutes allowed per team in rugby union?",
+                "questionInfo": "In rugby union, each team is allowed up to 8 substitutes during a match.",
+                "answers": ["8", "7", "5", "9"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the professional rugby competition in New Zealand?",
+                "questionInfo": "The professional rugby competition in New Zealand is called the Super Rugby.",
+                "answers": ["Super Rugby", "Rugby Premiership", "Top 14", "Pro14"],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "Baseball",
+        "questions": [
+            {
+                "question": "How many players are on the field for each team in a baseball game?",
+                "questionInfo": "Each team has 9 players on the field during a baseball game.",
+                "answers": ["9", "8", "7", "10"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'home run' in baseball?",
+                "questionInfo": "A home run occurs when a batter hits the ball over the outfield fence in fair territory, allowing the batter and any runners to score.",
+                "answers": ["Home run", "Strikeout", "Double", "Triple"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the standard number of innings in a professional baseball game?",
+                "questionInfo": "A professional baseball game consists of 9 innings, with each inning divided into a top and bottom half.",
+                "answers": ["9", "7", "10", "8"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'strikeout' in baseball?",
+                "questionInfo": "A strikeout occurs when a batter accumulates three strikes during an at-bat, resulting in the batter being out.",
+                "answers": ["Strikeout", "Home run", "Double play", "Base hit"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Who holds the MLB record for most career home runs?",
+                "questionInfo": "Barry Bonds holds the record for most career home runs in MLB with 762 home runs.",
+                "answers": ["Barry Bonds", "Babe Ruth", "Hank Aaron", "Willie Mays"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the 'diamond' in baseball?",
+                "questionInfo": "The diamond refers to the shape of the baseball field, consisting of four bases and the area between them.",
+                "answers": ["Diamond", "Pitcher's mound", "Batting cage", "Outfield"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the primary purpose of a pitcher in baseball?",
+                "questionInfo": "The primary purpose of the pitcher is to throw the ball to the batter in an attempt to get them out.",
+                "answers": ["Pitcher", "Catcher", "Shortstop", "First baseman"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'double play' in baseball?",
+                "questionInfo": "A double play occurs when two offensive players are put out in one continuous play, typically involving the shortstop and second baseman.",
+                "answers": ["Double play", "Triple play", "Strikeout", "Error"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which team won the most World Series championships?",
+                "questionInfo": "The New York Yankees have won the most World Series championships, with 27 titles.",
+                "answers": ["New York Yankees", "Boston Red Sox", "Los Angeles Dodgers", "Chicago Cubs"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term used for a batter who is walked four times in a game?",
+                "questionInfo": "When a batter is walked four times in a game, it is referred to as a 'free pass.'",
+                "answers": ["Free pass", "Home run", "Grand slam", "Walk-off"],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    {
+        "category": "Weightlifting",
+        "questions": [
+            {
+                "question": "What are the two main lifts in Olympic weightlifting?",
+                "questionInfo": "The two main lifts in Olympic weightlifting are the clean and jerk and the snatch.",
+                "answers": ["Clean and jerk, Snatch", "Squat, Deadlift", "Clean and press, Bench press", "Snatch, Deadlift"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the competition that determines the world champion in weightlifting?",
+                "questionInfo": "The World Weightlifting Championships is the premier international competition for weightlifting.",
+                "answers": ["World Weightlifting Championships", "Olympic Games", "European Championships", "World Powerlifting Championships"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "In weightlifting, what does the term 'snatch' refer to?",
+                "questionInfo": "The snatch is a lift where the barbell is lifted from the ground to overhead in one continuous motion.",
+                "answers": ["Snatch", "Clean and jerk", "Squat", "Deadlift"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the maximum number of attempts a weightlifter has to lift a particular weight in competition?",
+                "questionInfo": "A weightlifter is allowed three attempts at each lift (snatch and clean and jerk) in a competition.",
+                "answers": ["3", "5", "2", "4"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which weight class does the 2020 Olympic gold medalist in women's weightlifting belong to?",
+                "questionInfo": "The 2020 Olympic gold medalist in women's weightlifting, Hou Zhihui, competed in the 49 kg weight class.",
+                "answers": ["49 kg", "55 kg", "63 kg", "71 kg"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the primary goal in weightlifting competitions?",
+                "questionInfo": "The primary goal in weightlifting competitions is to lift the heaviest possible weight in the snatch and clean and jerk.",
+                "answers": ["Lift the heaviest weight", "Lift more than the opponent", "Lift the lightest weight", "Lift a set number of times"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the world record for the heaviest snatch ever performed?",
+                "questionInfo": "The heaviest snatch ever performed in official competition is 263 kg by Lasha Talakhadze of Georgia.",
+                "answers": ["263 kg", "250 kg", "245 kg", "270 kg"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What does the term 'clean and jerk' refer to in weightlifting?",
+                "questionInfo": "The clean and jerk is a two-part lift where the barbell is first lifted to the shoulders (clean) and then overhead (jerk).",
+                "answers": ["Clean and jerk", "Squat and press", "Snatch and press", "Deadlift and pull"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which country has historically dominated weightlifting in the Olympics?",
+                "questionInfo": "Countries such as the Soviet Union (now Russia), China, and Bulgaria have historically dominated Olympic weightlifting.",
+                "answers": ["Russia", "China", "USA", "Germany"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the role of a coach in weightlifting competitions?",
+                "questionInfo": "The coach's role in weightlifting is to provide technical guidance, strategy, and support during competition.",
+                "answers": ["Coach", "Trainer", "Referee", "Spectator"],
+                "correctAnswerIndex": 0
+            }
+        ]
+    }
+]
+ 
