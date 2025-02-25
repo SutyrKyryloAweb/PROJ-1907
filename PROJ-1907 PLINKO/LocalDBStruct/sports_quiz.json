@@ -893,6 +893,71 @@
                 "correctAnswerIndex": 0
             }
         ]
+    },
+    {
+        "category": "Billiards",
+        "questions": [
+            {
+                "question": "How many balls are used in a standard game of 8-ball pool, including the cue ball?",
+                "questionInfo": "In 8-ball pool, there are 15 object balls plus 1 cue ball, making a total of 16 balls.",
+                "answers": ["16", "15", "14", "17"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the name of the ball that is struck first in a game of billiards?",
+                "questionInfo": "In billiards, the white ball used to strike other balls is called the cue ball.",
+                "answers": ["Cue ball", "Break ball", "Object ball", "Bank ball"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "In 9-ball pool, which ball must be hit first?",
+                "questionInfo": "In 9-ball pool, the player must always hit the lowest-numbered ball first, starting with the 1-ball.",
+                "answers": ["The lowest-numbered ball", "Any ball", "The 9-ball", "The cue ball"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for hitting the cue ball off the rail before striking another ball?",
+                "questionInfo": "In billiards, a 'bank shot' refers to hitting the cue ball against a rail before striking another ball.",
+                "answers": ["Bank shot", "Jump shot", "Spin shot", "Break shot"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What happens when the cue ball is pocketed in a game of pool?",
+                "questionInfo": "Pocketing the cue ball is called a scratch and usually results in a penalty, such as giving ball-in-hand to the opponent.",
+                "answers": ["Scratch", "Foul", "Win", "Re-rack"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the term for spinning the cue ball to control its movement after contact?",
+                "questionInfo": "Applying spin to the cue ball to control its movement after hitting another ball is called English or sidespin.",
+                "answers": ["English", "Jump", "Topspin", "Bank"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "Which billiards game requires players to hit both their object balls and the opponent’s to score points?",
+                "questionInfo": "In carom billiards, players must strike their cue ball to hit both object balls to score points.",
+                "answers": ["Carom billiards", "8-ball", "Snooker", "9-ball"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is the primary objective of snooker?",
+                "questionInfo": "In snooker, players must pot red and colored balls in a specific order to score the most points.",
+                "answers": ["Pot balls in a specific order", "Sink the 8-ball first", "Hit as many balls as possible", "Only pocket the cue ball"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "What is a 'break' in billiards?",
+                "questionInfo": "A 'break' in billiards refers to the opening shot of the game, where the cue ball is used to scatter the racked balls.",
+                "answers": ["Opening shot", "A foul", "A spin shot", "A long shot"],
+                "correctAnswerIndex": 0
+            },
+            {
+                "question": "In professional billiards, what material is typically used to cover the playing surface?",
+                "questionInfo": "High-quality billiards tables are covered with wool-based felt, commonly referred to as baize.",
+                "answers": ["Baize", "Velvet", "Leather", "Plastic"],
+                "correctAnswerIndex": 0
+            }
+        ]
     }
 ]
  

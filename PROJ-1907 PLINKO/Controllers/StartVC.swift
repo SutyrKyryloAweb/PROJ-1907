@@ -44,19 +44,12 @@ class StartVC: UIViewController {
     
     let playButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named: "defaultButton"), for: .normal)
-        button.titleLabel?.text = "Play"
-        button.setTitleColor( .white, for: .normal)
+        button.setBackgroundImage(UIImage(named: "defaultButton"), for: .normal)
+        button.setTitle("Play", for: .normal)
+        button.setTitleColor( .customPurple, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
-    }()
-    
-    let testView: AnimatedBorderView = {
-        let view = AnimatedBorderView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .black
-        return view
     }()
     
     
@@ -106,6 +99,8 @@ class StartVC: UIViewController {
             playButton.heightAnchor.constraint(equalToConstant: 64),
             playButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50)
         ])
+        
+        playButton.addTarget(self, action: #selector(handleTap), for: .touchUpInside)
     }
     
     func animateImages() {
@@ -140,5 +135,10 @@ class StartVC: UIViewController {
     
     func convertDegreesToRadians(degrees: CGFloat) -> CGFloat {
         return degrees / 180 * .pi
+    }
+    
+    @objc func handleTap() {
+        let vc = MenuVC()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
