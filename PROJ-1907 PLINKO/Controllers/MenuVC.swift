@@ -24,13 +24,54 @@ class MenuVC: UIViewController {
         return button
     }()
     
+    private let rulesIV: UIImageView = {
+        let iv = UIImageView(image: UIImage(named: "rulesImage"))
+        iv.translatesAutoresizingMaskIntoConstraints = false
+        return iv
+    }()
+    
+    private let rulesText: UILabel = {
+        let label = UILabel()
+        let text = """
+        1. Pick a level and start!
+        2. Answer questions, test your skills.
+        3. Skipped question = incorrect.
+        4. Check your results!
+        5. Didn't pass? Try again!
+        6. Open the next level in the menu.
+        """
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.minimumLineHeight = 24
+        paragraphStyle.maximumLineHeight = 24
+        paragraphStyle.lineSpacing = 16
+
+        let attributedString = NSAttributedString(
+            string: text,
+            attributes: [
+                .paragraphStyle: paragraphStyle,
+                .foregroundColor: UIColor.customPurple,
+                .font: UIFont.systemFont(ofSize: 18, weight: .medium)
+            ]
+        )
+        
+        label.attributedText = attributedString
+        label.numberOfLines = 0
+        label.textAlignment = .left
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        return label
+    }()
+    
     private var dataSource: [QuizCategory]?
+    private var isRulesSwown = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchData()
         addBackground()
         setupCollectionView()
+        setupRulesPage()
         setupLayout()
     }
     
@@ -62,10 +103,30 @@ class MenuVC: UIViewController {
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .clear
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.register(SportCell.self, forCellWithReuseIdentifier: "GameCell")
         collectionView.contentInsetAdjustmentBehavior = .always
+        collectionView.isScrollEnabled = false
         
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    private func setupRulesPage() {
+        view.addSubview(rulesIV)
+        rulesIV.addSubview(rulesText)
+        NSLayoutConstraint.activate([
+            
+            rulesIV.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -20),
+            rulesIV.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            rulesIV.widthAnchor.constraint(equalToConstant: 362),
+            rulesIV.heightAnchor.constraint(equalToConstant: 320),
+            
+            rulesText.topAnchor.constraint(equalTo: rulesIV.topAnchor,constant: 20),
+            rulesText.bottomAnchor.constraint(equalTo: rulesIV.bottomAnchor,constant: -20),
+            rulesText.leadingAnchor.constraint(equalTo: rulesIV.leadingAnchor,constant: 20),
+            rulesText.trailingAnchor.constraint(equalTo: rulesIV.trailingAnchor,constant: -20),
+        ])
+        rulesIV.alpha = 0
     }
     
     func addBackground() {
@@ -80,7 +141,27 @@ class MenuVC: UIViewController {
     }
     
     @objc func handleTap() {
-        
+        isRulesSwown.toggle()
+        howToPlayButton.isEnabled = false
+        if isRulesSwown {
+            UIView.animate(withDuration: 0.3) {
+                self.rulesIV.alpha = 1
+                self.collectionView.alpha = 0
+                self.howToPlayButton.setTitle("Ok", for: .normal)
+                self.titleLabel.text = "Rules"
+            } completion: { _ in
+                self.howToPlayButton.isEnabled = true
+            }
+        } else {
+            UIView.animate(withDuration: 0.3) {
+                self.rulesIV.alpha = 0
+                self.collectionView.alpha = 1
+                self.howToPlayButton.setTitle("How to play?", for: .normal)
+                self.titleLabel.text = "Let's start"
+            } completion: { _ in
+                self.howToPlayButton.isEnabled = true
+            }
+        }
     }
     
     private func createLayout() -> UICollectionViewCompositionalLayout {
@@ -92,7 +173,7 @@ class MenuVC: UIViewController {
             func createGroup(itemCount: Int, xOffset: CGFloat) -> NSCollectionLayoutGroup {
                 let totalWidth = CGFloat(itemCount) * 88 + CGFloat(itemCount - 1) * spacing
                 let screenWidth = environment.container.contentSize.width
-                let adjustedOffset = (screenWidth - totalWidth) / 2 // Центрирование
+                let adjustedOffset = (screenWidth - totalWidth) / 2
                 
                 let groupSize = NSCollectionLayoutSize(
                     widthDimension: .absolute(totalWidth),
@@ -114,9 +195,9 @@ class MenuVC: UIViewController {
             }
             
             let firstRow = createGroup(itemCount: 4, xOffset: 0)
-            let secondRow = createGroup(itemCount: 3, xOffset: 0) // Теперь без смещения
+            let secondRow = createGroup(itemCount: 3, xOffset: 0)
             let thirdRow = createGroup(itemCount: 4, xOffset: 0)
-            let fourthRow = createGroup(itemCount: 3, xOffset: 0) // Теперь без смещения
+            let fourthRow = createGroup(itemCount: 3, xOffset: 0)
             
             let containerGroup = NSCollectionLayoutGroup.vertical(
                 layoutSize: NSCollectionLayoutSize(
@@ -144,12 +225,28 @@ extension MenuVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GameCell", for: indexPath) as! SportCell
         let imageName = dataSource?[indexPath.item].category ?? ""
-        cell.configure(with: imageName)
+        let currInd = UserDefaults.standard.integer(forKey: "currentSection")
+        if indexPath.row <= currInd {
+            cell.configure(with: imageName)
+        } else if(indexPath.row == currInd + 1) {
+            cell.configure(with: "nextUnlock")
+            
+        } else {
+            cell.configure(with: "lock")
+        }
+
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let vc = ChooseVC()
+        vc.category = dataSource?[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        let currentSection = UserDefaults.standard.integer(forKey: "currentSection")
+        return indexPath.item <= currentSection
     }
 }
