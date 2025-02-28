@@ -58,7 +58,7 @@ class SportsDB {
 
     func updateFavourite(for categoryName: String, isCompleted: Bool) {
         if let index = categories.firstIndex(where: { $0.category == categoryName }) {
-            // categories[index].isFavourite = isFavourite
+            categories[index].isCompleted = isCompleted
             saveSports()
         }
     }

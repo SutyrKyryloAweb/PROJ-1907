@@ -68,11 +68,15 @@ class MenuVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData()
+        // fetchData()
         addBackground()
         setupCollectionView()
         setupRulesPage()
         setupLayout()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchData()
     }
     
     private func setupLayout() {

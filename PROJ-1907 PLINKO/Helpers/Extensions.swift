@@ -52,6 +52,7 @@ extension UIView {
 
 extension UIColor {
     static let customPurple = UIColor(red: 61/255, green: 3/255, blue: 96/255, alpha: 1.0)
+    static let customPink = UIColor(red: 205/255, green: 167/255, blue: 228/255, alpha: 1.0)
 //    static let customRed = UIColor(red: 253/255, green: 95/255, blue: 106/255, alpha: 1.0)
 //    static let customPink = UIColor(red: 228/255, green: 146/255, blue: 156/255, alpha: 1.0)
     

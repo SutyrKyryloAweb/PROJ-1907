@@ -1,10 +1,3 @@
-//
-//  SportCell.swift
-//  PROJ-1907 PLINKO
-//
-//  Created by Кирилл Сутырь on 25.02.2025.
-//
-
 import UIKit
 
 class SportCell: UICollectionViewCell {

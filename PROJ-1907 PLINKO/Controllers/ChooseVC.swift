@@ -9,11 +9,10 @@ class ChooseVC: UIViewController {
         return button
     }()
     
-    let testButton: UIButton = {
-        let button = UIButton()
+    let testButton: CustomButton = {
+        let button = CustomButton()
         button.setBackgroundImage(UIImage(named: "lockedButton"), for: .normal)
         button.isEnabled = false
-        button.alpha = 0.5
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -68,7 +67,8 @@ class ChooseVC: UIViewController {
             icon.topAnchor.constraint(equalTo: iconPlaceholder.topAnchor, constant: 15),
             icon.bottomAnchor.constraint(equalTo: iconPlaceholder.bottomAnchor, constant: -15),
             ])
-        
+        infoButton.addTarget(self, action: #selector(goToInfo), for: .touchUpInside)
+        testButton.addTarget(self, action: #selector(goToTest), for: .touchUpInside)
     }
     
     func addBackground() {
@@ -79,15 +79,30 @@ class ChooseVC: UIViewController {
     }
     
     @objc func goToInfo() {
-//        let infoVC = InfoVC()
-//        infoVC.category = category
-//        self.navigationController?.pushViewController(infoVC, animated: true)
+        let infoVC = InfoVC()
+        infoVC.category = category
+        infoVC.complitionHandler = {
+            UIView.animate(withDuration: 0.3) {
+                self.testButton.isEnabled = true
+                self.testButton.setBackgroundImage(UIImage(named: "unlockedButton"), for: .normal)
+            }
+        }
+        self.navigationController?.pushViewController(infoVC, animated: true)
     }
     
     @objc func goToTest() {
-//        let testVC = TestVC()
-//        testVC.category = category
-//        self.navigationController?.pushViewController(infoVC, animated: true)
+        let testVC = TestVC()
+        testVC.category = category
+        self.navigationController?.pushViewController(testVC, animated: true)
 
+    }
+}
+
+
+class CustomButton: UIButton {
+    override var isEnabled: Bool {
+        didSet {
+            self.alpha = 1
+        }
     }
 }
