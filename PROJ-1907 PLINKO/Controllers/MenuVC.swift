@@ -6,7 +6,7 @@ class MenuVC: UIViewController {
         let label = UILabel()
         label.text = "Let's start"
         label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        label.font = .baloo2(.bold, size: 24)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -19,7 +19,7 @@ class MenuVC: UIViewController {
         button.setBackgroundImage(UIImage(named: "defaultButton"), for: .normal)
         button.setTitle("How to play?", for: .normal)
         button.setTitleColor(.customPurple, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        button.titleLabel?.font = .baloo2(.bold, size: 20)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -34,11 +34,11 @@ class MenuVC: UIViewController {
         let label = UILabel()
         let text = """
         1. Pick a level and start!
-        2. Answer questions, test your skills.
-        3. Skipped question = incorrect.
-        4. Check your results!
-        5. Didn't pass? Try again!
-        6. Open the next level in the menu.
+        2. Learn information to pass test.
+        3. Answer 5 questions.
+        4. Every question is 1 point.
+        5. Earn 3 or more points to complete category.
+        6. Do it with all categories!
         """
         
         let paragraphStyle = NSMutableParagraphStyle()
@@ -51,7 +51,7 @@ class MenuVC: UIViewController {
             attributes: [
                 .paragraphStyle: paragraphStyle,
                 .foregroundColor: UIColor.customPurple,
-                .font: UIFont.systemFont(ofSize: 18, weight: .medium)
+                .font: UIFont.baloo2(.regular, size: 18)
             ]
         )
         
@@ -68,7 +68,6 @@ class MenuVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // fetchData()
         addBackground()
         setupCollectionView()
         setupRulesPage()
@@ -77,6 +76,7 @@ class MenuVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         fetchData()
+        collectionView.reloadData()
     }
     
     private func setupLayout() {
@@ -246,6 +246,7 @@ extension MenuVC: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = ChooseVC()
         vc.category = dataSource?[indexPath.row]
+        vc.isLast = indexPath.row == UserDefaults.standard.integer(forKey: "currentSection")
         navigationController?.pushViewController(vc, animated: true)
     }
     

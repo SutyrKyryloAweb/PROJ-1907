@@ -6,7 +6,7 @@ class InfoVC: UIViewController {
         let label = UILabel()
         label.text = "Let's start"
         label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        label.font = .baloo2(.bold, size: 24)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -16,7 +16,7 @@ class InfoVC: UIViewController {
         let label = UILabel()
         label.text = "1/3"
         label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        label.font = .baloo2(.bold, size: 24)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -27,7 +27,7 @@ class InfoVC: UIViewController {
         button.setBackgroundImage(UIImage(named: "defaultButton"), for: .normal)
         button.setTitle("Next", for: .normal)
         button.setTitleColor(.customPurple, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        button.titleLabel?.font = .baloo2(.bold, size: 20)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -37,7 +37,7 @@ class InfoVC: UIViewController {
         button.setBackgroundImage(UIImage(named: "transperantButton"), for: .normal)
         button.setTitle("Back", for: .normal)
         button.setTitleColor(.customPink, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        button.titleLabel?.font = .baloo2(.bold, size: 20)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.alpha = 0
         button.isEnabled = false
@@ -47,7 +47,7 @@ class InfoVC: UIViewController {
     private let innerTitleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .customPurple
-        label.font = UIFont.systemFont(ofSize: 20, weight: .medium)
+        label.font = .baloo2(.medium, size: 20)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -56,7 +56,7 @@ class InfoVC: UIViewController {
     private let infoText: UILabel = {
         let label = UILabel()
         label.textColor = .customPurple
-        label.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        label.font = .baloo2(.regular, size: 20)
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -77,6 +77,7 @@ class InfoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         addBackground()
         setupUI()
         
@@ -258,7 +259,7 @@ class InfoVC: UIViewController {
             let attributedString = NSAttributedString(
                 string: formattedFact,
                 attributes: [
-                    .font: UIFont.systemFont(ofSize: 16, weight: .regular),
+                    .font: UIFont.baloo2(.regular, size: 16),
                     .foregroundColor: UIColor.customPurple,
                     .paragraphStyle: paragraphStyle
                 ]

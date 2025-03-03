@@ -66,3 +66,17 @@ extension UIColor {
 //    UIFont.systemFont(ofSize: 16, weight: .heavy)      // 0.8
 //    UIFont.systemFont(ofSize: 16, weight: .black)      // 0.9
 }
+
+extension UIFont {
+    enum Baloo2Weight: String {
+        case regular = "Baloo2-Regular"
+        case medium = "Baloo2-Medium"
+        case semiBold = "Baloo2-SemiBold"
+        case bold = "Baloo2-Bold"
+        case extraBold = "Baloo2-ExtraBold"
+    }
+
+    static func baloo2(_ weight: Baloo2Weight, size: CGFloat) -> UIFont {
+        return UIFont(name: weight.rawValue, size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+}

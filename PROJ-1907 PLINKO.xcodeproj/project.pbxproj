@@ -148,6 +148,7 @@
 				DEVELOPMENT_TEAM = VA9UM6N9U4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PROJ-1907 PLINKO/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Quizy Sports";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -180,6 +181,7 @@
 				DEVELOPMENT_TEAM = VA9UM6N9U4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PROJ-1907 PLINKO/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Quizy Sports";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

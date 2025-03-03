@@ -18,6 +18,7 @@ class ChooseVC: UIViewController {
     }()
     
     var category: QuizCategory!
+    var isLast: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,9 @@ class ChooseVC: UIViewController {
     
     private func setupUI() {
         addBackground()
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Home", style: .plain, target: nil, action: nil)
+        navigationController?.navigationBar.tintColor = .white
         
         view.addSubview(infoButton)
         view.addSubview(testButton)
@@ -93,6 +97,7 @@ class ChooseVC: UIViewController {
     @objc func goToTest() {
         let testVC = TestVC()
         testVC.category = category
+        testVC.isLast = self.isLast
         self.navigationController?.pushViewController(testVC, animated: true)
 
     }

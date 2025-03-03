@@ -47,7 +47,7 @@ class StartVC: UIViewController {
         button.setBackgroundImage(UIImage(named: "defaultButton"), for: .normal)
         button.setTitle("Play", for: .normal)
         button.setTitleColor( .customPurple, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        button.titleLabel?.font = .baloo2(.bold, size: 20)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -139,6 +139,7 @@ class StartVC: UIViewController {
     
     @objc func handleTap() {
         let vc = MenuVC()
-        self.navigationController?.pushViewController(vc, animated: true)
+        guard let navController = self.navigationController else { return }
+        navController.setViewControllers([vc], animated: true)
     }
 }

@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  PROJ-1907 PLINKO
-//
-//  Created by Кирилл Сутырь on 19.02.2025.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -18,7 +11,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if(UserDefaults.standard.object(forKey: "currentSection") == nil ) {
             UserDefaults.standard.set(0, forKey: "currentSection")
         }
-        UserDefaults.standard.set(3, forKey: "currentSection")
         let window = UIWindow(windowScene: windowScene)
         let navigationVC = UINavigationController(rootViewController: StartVC())
         window.rootViewController = navigationVC
