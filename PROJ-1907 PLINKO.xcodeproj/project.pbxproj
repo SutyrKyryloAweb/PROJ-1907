@@ -6,11 +6,49 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9D3E1EA72D89615400EF39BA /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 9D3E1EA62D89615400EF39BA /* AppsFlyerLib */; };
+		9D3E1EE22D89670900EF39BA /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 9D3E1EE12D89670900EF39BA /* OneSignalFramework */; };
+		9D3E1F162D89BDC800EF39BA /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9D3E1F0F2D89BDC800EF39BA /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D3E1F142D89BDC800EF39BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D93198E2D661BB500FD908F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D3E1F0E2D89BDC800EF39BA;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D3E1F1B2D89BDC800EF39BA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9D3E1F162D89BDC800EF39BA /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9D3E1F0F2D89BDC800EF39BA /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9319962D661BB500FD908F /* PROJ-1907 PLINKO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PROJ-1907 PLINKO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9D3E1F1A2D89BDC800EF39BA /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9D3E1F0E2D89BDC800EF39BA /* OneSignalNotificationServiceExtension */;
+		};
 		9D9319A82D661BB700FD908F /* Exceptions for "PROJ-1907 PLINKO" folder in "PROJ-1907 PLINKO" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -21,6 +59,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		9D3E1F102D89BDC800EF39BA /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9D3E1F1A2D89BDC800EF39BA /* Exceptions for "OneSignalNotificationServiceExtension" folder in "OneSignalNotificationServiceExtension" target */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		9D9319982D661BB500FD908F /* PROJ-1907 PLINKO */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -32,20 +78,38 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9D9319932D661BB500FD908F /* Frameworks */ = {
+		9D3E1F0C2D89BDC800EF39BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9D9319932D661BB500FD908F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3E1EE22D89670900EF39BA /* OneSignalFramework in Frameworks */,
+				9D3E1EA72D89615400EF39BA /* AppsFlyerLib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D3E1EE02D89670900EF39BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D93198D2D661BB500FD908F = {
 			isa = PBXGroup;
 			children = (
 				9D9319982D661BB500FD908F /* PROJ-1907 PLINKO */,
+				9D3E1F102D89BDC800EF39BA /* OneSignalNotificationServiceExtension */,
+				9D3E1EE02D89670900EF39BA /* Frameworks */,
 				9D9319972D661BB500FD908F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				9D9319962D661BB500FD908F /* PROJ-1907 PLINKO.app */,
+				9D3E1F0F2D89BDC800EF39BA /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +126,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9D3E1F0E2D89BDC800EF39BA /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D3E1F172D89BDC800EF39BA /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				9D3E1F0B2D89BDC800EF39BA /* Sources */,
+				9D3E1F0C2D89BDC800EF39BA /* Frameworks */,
+				9D3E1F0D2D89BDC800EF39BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9D3E1F102D89BDC800EF39BA /* OneSignalNotificationServiceExtension */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			packageProductDependencies = (
+			);
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 9D3E1F0F2D89BDC800EF39BA /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9D9319952D661BB500FD908F /* PROJ-1907 PLINKO */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D9319A92D661BB700FD908F /* Build configuration list for PBXNativeTarget "PROJ-1907 PLINKO" */;
@@ -68,16 +155,20 @@
 				9D9319922D661BB500FD908F /* Sources */,
 				9D9319932D661BB500FD908F /* Frameworks */,
 				9D9319942D661BB500FD908F /* Resources */,
+				9D3E1F1B2D89BDC800EF39BA /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9D3E1F152D89BDC800EF39BA /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				9D9319982D661BB500FD908F /* PROJ-1907 PLINKO */,
 			);
 			name = "PROJ-1907 PLINKO";
 			packageProductDependencies = (
+				9D3E1EA62D89615400EF39BA /* AppsFlyerLib */,
+				9D3E1EE12D89670900EF39BA /* OneSignalFramework */,
 			);
 			productName = "PROJ-1907 PLINKO";
 			productReference = 9D9319962D661BB500FD908F /* PROJ-1907 PLINKO.app */;
@@ -90,9 +181,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1610;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					9D3E1F0E2D89BDC800EF39BA = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					9D9319952D661BB500FD908F = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -107,17 +201,29 @@
 			);
 			mainGroup = 9D93198D2D661BB500FD908F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9D3E1EA52D89615400EF39BA /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				9D3E1EA82D89621000EF39BA /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9D9319972D661BB500FD908F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9D9319952D661BB500FD908F /* PROJ-1907 PLINKO */,
+				9D3E1F0E2D89BDC800EF39BA /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9D3E1F0D2D89BDC800EF39BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D9319942D661BB500FD908F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,6 +234,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9D3E1F0B2D89BDC800EF39BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D9319922D661BB500FD908F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,30 +250,104 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9D3E1F152D89BDC800EF39BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D3E1F0E2D89BDC800EF39BA /* OneSignalNotificationServiceExtension */;
+			targetProxy = 9D3E1F142D89BDC800EF39BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		9D3E1F182D89BDC800EF39BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quizy.sports.test.games.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9D3E1F192D89BDC800EF39BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OneSignalNotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quizy.sports.test.games.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		9D9319AA2D661BB700FD908F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "PROJ-1907 PLINKO/PROJ-1907 PLINKO.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VA9UM6N9U4;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PROJ-1907 PLINKO/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Quizy Sports";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sutyrKyrylo.PROJ-1907-PLINKO";
+				PRODUCT_BUNDLE_IDENTIFIER = quizy.sports.test.games;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -176,24 +363,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "PROJ-1907 PLINKO/PROJ-1907 PLINKO.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VA9UM6N9U4;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PROJ-1907 PLINKO/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Quizy Sports";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sutyrKyrylo.PROJ-1907-PLINKO";
+				PRODUCT_BUNDLE_IDENTIFIER = quizy.sports.test.games;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -326,6 +517,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9D3E1F172D89BDC800EF39BA /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D3E1F182D89BDC800EF39BA /* Debug */,
+				9D3E1F192D89BDC800EF39BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9D9319912D661BB500FD908F /* Build configuration list for PBXProject "PROJ-1907 PLINKO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -345,6 +545,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D3E1EA52D89615400EF39BA /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.16.2;
+			};
+		};
+		9D3E1EA82D89621000EF39BA /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.10;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D3E1EA62D89615400EF39BA /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D3E1EA52D89615400EF39BA /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		9D3E1EE12D89670900EF39BA /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D3E1EA82D89621000EF39BA /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D93198E2D661BB500FD908F /* Project object */;
 }

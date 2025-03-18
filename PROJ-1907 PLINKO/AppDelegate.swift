@@ -1,11 +1,5 @@
-//
-//  AppDelegate.swift
-//  PROJ-1907 PLINKO
-//
-//  Created by Кирилл Сутырь on 19.02.2025.
-//
-
 import UIKit
+import AppTrackingTransparency
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,12 +7,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        NetworkManager.shared.startMonitoring()
         return true
     }
 
     // MARK: UISceneSession Lifecycle
 
+    func applicationDidFinishLaunching(_ application: UIApplication) {
+        ATTrackingManager.requestTrackingAuthorization { _ in
+            print ("requested")
+        }
+    }
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
@@ -31,6 +31,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        if let _ = window?.rootViewController as? BlackVC {
+            return .all
+        } else {
+            return .portrait
+        }
+    }
 }
 

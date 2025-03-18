@@ -1,7 +1,6 @@
 import UIKit
 
 class StartVC: UIViewController {
-    
     let footballImage: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "Football")
@@ -138,8 +137,10 @@ class StartVC: UIViewController {
     }
     
     @objc func handleTap() {
-        let vc = MenuVC()
-        guard let navController = self.navigationController else { return }
-        navController.setViewControllers([vc], animated: true)
-    }
+        guard let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else {
+            print("SceneDelegate not found")
+            return
+        }
+        let whiteVC = MenuVC()
+        sceneDelegate.changeNavRoot(to: whiteVC)}
 }
